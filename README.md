@@ -1,7 +1,25 @@
-# Recommendaton-Engine-Biclustering
-This is a Recommendation System that recommends movies to users based on thier liking of past movies.
-This System make use of Bicluster apporach which is used in biomedical field for gene sequencing.
-This system employs the algorithms like Clustering (k means) , matrix factorization and simmilarity measurements.
-The recommendation engine take and give input and oupt in form of movie id where each movie is mapped to a unique id.
-The Input files for this system are movies_2000.csv and ratings_2000.csv 
-Rest all file are intermediate results of processing like movie_movie_matrix and user_user_matrix both stores the factorized component of the matrix
+# Recommendation-Engine-Biclustering
+
+This is a Recommendation System that recommends movies to users based on their past movie preferences. The system leverages a **Biclustering** approach, originally used in biomedical fields for gene sequencing, and adapts it for use in movie recommendations.
+
+## Algorithms and Techniques Used
+The system employs the following key techniques:
+- **Clustering**: Utilizes K-Means clustering to group similar users or movies.
+- **Matrix Factorization**: Decomposes the user-movie interaction matrix into factorized components for improved recommendations.
+- **Similarity Measurements**: Calculates similarities between users or movies to enhance recommendation accuracy.
+
+## Input and Output
+The recommendation engine works with movie IDs, where each movie is mapped to a unique ID. The inputs are given as a list of movie IDs, and the engine outputs recommended movie IDs.
+
+## Input Files
+The system requires the following input files:
+- **movies_2000.csv**: Contains a list of movies along with their unique IDs.
+- **ratings_2000.csv**: Contains user ratings for each movie, with mappings between users and movie IDs.
+
+## Intermediate Files
+These files are generated during the processing stages and store important intermediate results:
+- **movie_movie_matrix**: Stores the factorized components of the movie similarity matrix.
+- **user_user_matrix**: Stores the factorized components of the user similarity matrix.
+
+## Summary
+This system adapts powerful biclustering and matrix factorization techniques to deliver personalized movie recommendations based on users' historical preferences.
